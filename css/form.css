@@ -1,0 +1,150 @@
+form {
+    box-sizing: border-box;
+}
+form input {
+    width: 100%;
+}
+fieldset {
+    width: 100%;
+    margin: auto;
+}
+
+
+/*label and input - begin*/
+
+.field {
+    display: flex;
+    flex-flow: column-reverse;
+    margin-bottom: 0.7em;
+}
+.field input {
+    transition: all 0.2s;
+    touch-action: manipulation;
+}
+.field label {
+    transition: all 0.2s;
+    touch-action: manipulation;
+    display: block;
+    margin-top: 1.5em;
+    color: #2e8074;
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+
+}
+
+input:placeholder-shown + label {
+    cursor: text;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform-origin: .25em -1em;
+    transform: translate(0, 2.3em);
+    padding: 0 .5em 0;
+}
+::-webkit-input-placeholder {
+    opacity: 0;
+    transition: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+    opacity: 1;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+    transform: translate(0, 0) scale(1);
+    cursor: pointer;
+}
+/*label and input - end*/
+.contactForm label:first-of-type {
+    margin-top: 0;
+}
+
+
+.contactForm input, .contactForm textarea {
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+    cursor: text;
+    color: #707070;
+    box-sizing: border-box;
+}
+
+form#contactForm {
+    max-width: 600px;
+    margin: auto;
+}
+fieldset {
+    padding: 1em;
+    border: solid 1px #fff;
+    border-radius: .5em;
+}
+legend {
+    padding: 0 .5em;
+    font-size: 1.3em;
+    font-weight: 200;
+}
+
+.contactForm input[type="submit"] {
+    background-color: #2e8074;
+    border: none;
+    color: #fff;
+    width: 50%;
+    min-width: 170px;
+    font-size: 1.2em;
+}
+.contactForm input[type="submit"]:active {
+    box-shadow: 1px 1px 6px rgba(255,255,255,.6), 0px 0px 4px rgba(255,255,255,.8);
+}
+
+.contactForm .checks {
+    margin: .25em 0 1em .1em;
+    font-size: 1.2em;
+}
+.contactForm input[type="checkbox"] + label {
+    display: inline-block;
+    padding-top: 0;
+    margin-top: 0;
+}
+/* custom checkbox */
+.contactForm .checks label {
+    display: inline-block;
+}
+
+.contactForm input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 20px;
+    height: 20px;
+    margin-top: 1px;
+    margin-left: -1px;
+    cursor: auto;
+}
+
+input[type="checkbox"]:checked ~ span:before {
+    content: "\f14a";
+}
+
+.checks span:before {
+    display: inline-block;
+    box-sizing: border-box;
+    font-family: "Font Awesome 5 Free";
+    content: "\f0c8";
+    color: #fff;
+    font-size: 1.3em;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.contactForm input:focus, .contactForm textarea:focus {
+    box-shadow: 0 0 2px #2e8074, 0px 0px 4px #2e8074, 1px 1px 4px #3ab49d, 2px 2px 4px #3ab49d;
+    outline: none;
+    border: solid 1px #3ab49d;
+}
+.questionWrapper {
+    font-size: 1.2em;
+    margin-top: 2em;
+    color: #2e8074;
+}
