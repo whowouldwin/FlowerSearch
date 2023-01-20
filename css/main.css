@@ -53,3 +53,30 @@ nav { grid-area: n;}
     text-align: left;
     width: 100%;
 }
+#logo span {
+    font-weight: 300;
+    font-size: 1rem;
+    display: block;
+    padding-left: 6px;
+}
+nav {
+    width: 100%;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+}
+nav li {
+    padding: .25em;
+    border-bottom: solid 1px salmon;
+}
+nav li:first-of-type {
+    border-top: solid 1px salmon;
+}
+nav a {
+    display: block;
+    text-decoration: none;
+    padding: .25em;
+    color: #3ab49d;
+}
+
