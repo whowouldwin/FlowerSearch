@@ -47,11 +47,6 @@ header#main {
 #logo { grid-area: l;}
 nav { grid-area: n;}
 
-#contact {
-    background-color: #70c5b5b8;
-    color: #fff;
-    padding-bottom: 2em;
-}
 #logo {
     background: url(../images/birdLogo.svg) no-repeat 0px 0px;
     padding-left: 2.5em;
@@ -122,4 +117,47 @@ nav a {
 }
 #intro a:last-child {
     background-color: #f39942;
+}
+#about h1 {
+    padding: 0 .5em;
+    color: #3ab49d;
+}
+
+#products h1, #services h1, #contact h1 {
+    padding: 2em 1em;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 2px #333;
+    margin-bottom: .25em;
+}
+#palms h1 {
+    background: url(../images/palm.jpg) no-repeat top center;
+    background-size: cover;
+}
+
+#cycads h1 {
+    background: url(../images/cycad.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#tropicals h1 {
+    background: url(../images/heliconia.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+#services h1 {
+    background: url(../images/services.jpg) no-repeat center center;
+    background-size: cover;
+}
+#services ul {
+    margin: .5em 3em 1em;
+}
+#services p {
+    padding: 0;
+    margin-bottom: .5em;
+}
+#contact {
+    background-color: #70c5b5b8;
+    color: #fff;
+    padding-bottom: 2em;
 }
