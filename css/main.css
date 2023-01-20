@@ -10,6 +10,16 @@ body {
     url(/images/jungleDown.jpg) repeat-x top center;
     padding: 1em;
 }
+h2 {
+    text-transform: uppercase;
+    font-size: 125%;
+    font-weight: 300;
+    color: #666;
+}
+h1 {
+    font-size: 200%;
+    color: #277e5c;
+}
 p {
     padding: 0 1em;
     margin-bottom: 1em;
@@ -79,4 +89,37 @@ nav a {
     padding: .25em;
     color: #3ab49d;
 }
+/*section intro*/
+#intro {
+    text-align: center;
+    background:  url(../images/walkway.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 1em;
+}
+#intro header {
+    display: flex;
+    flex-direction: column;
+    background: rgba(255,255,255,.6);
+    padding: 2em 1em;
+}
+#intro h1 {
+    order: 2;
+    margin-bottom: .75em;
+}
 
+#intro div {
+    order: 3;
+}
+#intro a {
+    border-radius: 10px;
+    background-color: #3ab49d;
+    padding: 10px;
+    display: inline;
+    width: 100px;
+    margin: 0 1em;
+    color: #fff;
+    text-decoration: none;
+}
+#intro a:last-child {
+    background-color: #f39942;
+}
