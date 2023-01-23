@@ -149,3 +149,20 @@ input[type="checkbox"]:checked ~ span:before {
     margin-top: 2em;
     color: #ffffff;
 }
+@media screen and (min-width: 600px) {
+    .swrap {
+        margin-top: -20px;
+        margin-left: 50%;
+    }
+
+    .searchButton {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .swrap {
+        width: 100%;
+        margin: 2px 0px 0 0;
+    }
+}
